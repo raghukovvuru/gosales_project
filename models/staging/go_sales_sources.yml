@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: go_sales
+    description: source go_sales data
+    database: airbyte_database
+    schema: gosales
+    tables:
+      - name: go_daily_sales
+        description: sales table
+      - name: go_methods
+        description: sale methods table
+      - name: go_retailers
+        description: retailers table
+      - name: go_products
+        description: products table
+
+     
