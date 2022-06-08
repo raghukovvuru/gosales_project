@@ -5,10 +5,14 @@ with source as (
 ),
 renamed AS(
     select 
-          "Product number" AS product_id,
-          "Retailer code" AS retailer_id,
+          {{ dbt_utils.surrogate_key(
+            ['"Product number"', 
+            '"Retailer code"']) }}
+                as order_id,
+          "Product number"::INT AS product_id,
+          "Retailer code"::INT AS retailer_id,
           date,
-          quantity AS quantity_sold
+          quantity::INT AS quantity_sold
     from source
 )
 
