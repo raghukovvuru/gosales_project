@@ -1,15 +1,12 @@
-Welcome to your new dbt project!
+Analytics Engineering project with Great Outdoors dataset.
+### Technologies Used
+<ul>
+  <li>**MySQL**- as transaction database(OLTP)</li>
+  <li>**Airbyte**- as Extract-Load(EL) tool between MySQL database and Snowflake data warehouse</li>
+  <li>**Snowflake** - as Data Warehouse for loading raw data and performing transformations using dbt</li>
+  <li>**dbt** - as Transformation tool</li>
+  <li>**Metabase** - as data visualization tool</li>
+</ul>
 
-### Using the starter project
+### Arctitecture diagram
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
