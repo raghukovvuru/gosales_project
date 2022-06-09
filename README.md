@@ -18,3 +18,12 @@ dbt Project docs url - https://cloud.getdbt.com/accounts/68052/develop/1204134/d
 ### Arctitecture diagram
 ![GoSales Data pipeline](https://github.com/raghukovvuru/gosales_project/blob/9b030b4faf1d1435e82a41655adeb88156481213/GoSales%20Analytics%20Architecture.svg?raw=true)
 
+
+### Sample queries 
+~~~~sql
+select products.product_category,sum(sales.sale_total) 
+from fct_sales sales 
+join dim_products as products
+on sales.product_key=products.product_key
+group by 1 order by 2 desc;
+~~~~
