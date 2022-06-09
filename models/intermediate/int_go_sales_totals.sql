@@ -6,8 +6,10 @@ products as(
 ),
 calculated as(
     select s.order_id,
+           s.date,
            s.product_id,
            s.retailer_id,
+           s.order_method_id,
            s.quantity_sold,
            p.unit_price,
            (p.unit_price * s.quantity_sold) as sale_total

@@ -11,6 +11,7 @@ renamed AS(
                 as order_id,
           "Product number"::INT AS product_id,
           "Retailer code"::INT AS retailer_id,
+          "Order method code" as order_method_id,
           date,
           quantity::INT AS quantity_sold
     from source
