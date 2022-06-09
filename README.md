@@ -1,4 +1,11 @@
 Analytics Engineering project with Great Outdoors dataset.
+
+
+dbt Project docs url - https://cloud.getdbt.com/accounts/68052/develop/1204134/docs/index.html
+
+### dbt Lineage Graph
+![dbt lineage graph](https://github.com/raghukovvuru/gosales_project/blob/59794233de70793faea8896882fc9c7ed2911950/dbt-graph.png?raw=true)
+
 ### Technologies Used
 <ul>
   <li><strong>MySQL</strong>- as transaction database(OLTP)</li>
