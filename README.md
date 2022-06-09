@@ -9,4 +9,5 @@ Analytics Engineering project with Great Outdoors dataset.
 </ul>
 
 ### Arctitecture diagram
+![GoSales Data pipeline](https://github.com/raghukovvuru/gosales_project/blob/9b030b4faf1d1435e82a41655adeb88156481213/GoSales%20Analytics%20Architecture.svg?raw=true)
 
